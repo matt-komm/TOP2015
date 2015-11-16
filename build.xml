@@ -1,0 +1,30 @@
+<project name="MyProject" default="build" basedir=".">
+    <condition property="params.set">
+        <and>
+            <isset property="viewer"/>
+        </and>
+    </condition>
+
+    <target name="check">
+        <fail unless="params.set">
+        Must specify the parameters: viewer
+        </fail>
+    </target>
+
+    <target name="build" depends="check">
+        <echo>
+        viewer = ${viewer}
+        
+        </echo>
+        <exec executable="/usr/bin/pdflatex" resolveexecutable="true" failonerror="true">
+            <arg line="-output-directory tmp TOP2015.tex"/>
+        </exec>
+    </target>
+    
+    <target name="view" depends="build">
+        <exec executable="${viewer}" spawn="true">
+        <arg line="tmp/TOP2015.pdf"/>
+        </exec>
+        
+    </target>
+</project>
