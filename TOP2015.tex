@@ -1,5 +1,6 @@
 
 \documentclass{PoS}
+\usepackage{amsmath}
 
 \title{Single top production measurements at the LHC: t-channel}
 
@@ -29,7 +30,7 @@ The production and decay of single top quarks via $t$-channel soley involves ele
 In the following, the latest results by the ATLAS and CMS collaborations are reviewed.
 
 \section{Cross section measurements at 8~TeV}
-Precise measurements of the $t$-channel single top cross section at 8~TeV have been accomplished at the LHC in pp collisions by the ATLAS and CMS collaborations~\cite{atlas-xsec8,cms-xsec8,CMS-PAS-TOP-15-007} utilizing data that corresponds to approximately $20~\mathrm{fb}^{-1}$. For the measurements, events with an isolated muon or electron and two jets are selected where one jet is required to pass the threshold of a dedicated b-tagging algorithm. The cross section is measured through a maximum likelihood fit to a discriminating variable. CMS exploits the pseudo rapidity distribution of the non b-tagged jet that is produced in the forward detector region for single top events (Fig.~\ref{fig:fit-xsec-8}a) whereas ATLAS combines multiple observables in one powerful discriminant by training a neutral network (Fig.~\ref{fig:fit-xsec-8}b).
+Precise measurements of the $t$-channel single top cross section at 8~TeV have been accomplished at the LHC in pp collisions by the ATLAS and CMS collaborations~\cite{atlas-xsec8,cms-xsec8} utilizing data that corresponds to approximately $20~\mathrm{fb}^{-1}$. For the measurements, events with an isolated muon or electron and two jets are selected where one jet is required to pass the threshold of a dedicated b-tagging algorithm. The cross section is measured using a binned maximum likelihood fit to a discriminating variable. CMS exploits the pseudo rapidity distribution of the non b-tagged jet that is produced in the forward detector region for single top events (Fig.~\ref{fig:fit-xsec-8}a) whereas ATLAS combines multiple observables in one powerful discriminant by training a neutral network (Fig.~\ref{fig:fit-xsec-8}b).
 
 \begin{figure}[htbp]
 \begin{center}
@@ -41,12 +42,16 @@ Precise measurements of the $t$-channel single top cross section at 8~TeV have b
 
 \end{figure}
 
-Finaly, the measured inclusive cross section is used to set a limit on the CKM matrix element $\mathrm{V_{tb}}$ without assumptions on the number of quark generations.
+Finaly, the measured inclusive cross section is used to set a limit on the CKM matrix element $|\mathrm{V_{tb}}|\equiv\sqrt{\sigma_\mathrm{obs.}/\sigma_\mathrm{theo.}}$ without assumptions on the number of quark generations. The measured cross section at 8~TeV together with the extracted limits on $\mathrm{|V_{tb}|}$ are 
+\begin{align}
+\sigma_{t\mbox{-}\mathrm{ch.}}^\mathrm{ATLAS}&=82.6\pm1.2\mathrm{(stat)}\pm12.0\mathrm{(syst)}, &\Rightarrow |\mathrm{V_{tb}}|>0.78~\mathrm{(95\%~CL,~8~TeV)}, \\
+\sigma_{t\mbox{-}\mathrm{ch.}}^\mathrm{CMS}&=83.6\pm2.3\mathrm{(stat)}\pm7.4\mathrm{(syst)} &\Rightarrow |\mathrm{V_{tb}}|>0.92~\mathrm{(95\%~CL,~7+8~TeV)}.
+\end{align}
 
-In addition to the inclusive cross section, the fiducial cross section has been measured as well. It provides a deep test of the theory by restricting the measurement only to the detector acceptance. The advantage is that fiducial measurements do not inherit theoretical uncertainities that account for extrapolations into an experimentally unprobed phase space.
+In addition to the inclusive cross section, the fiducial cross section has been measured as well~\cite{atlas-xsec8,CMS-PAS-TOP-15-007}. It provides a deep test of the theory by restricting the measurement only to the detector acceptance. The advantage is that fiducial measurements do not inherit theoretical uncertainities that account for extrapolations into an experimentally unprobed phase space.
 
 
-The results of the inclusive and fiducial cross section measurements together with the extracted limits on $\mathrm{V_{tb}}$ are summarized in Table ???
+
 
 
 \section{Charge ratio measurements}
@@ -61,19 +66,23 @@ The cross section charge ratio $\sigma(t)/\sigma(\bar{t})$ has also been measure
 
 \end{figure}
 
+\section{Electroweak couplings structure}
+Single top quark events allow to probe the electroweak V-A structure because of the Wtb vertex in production and decay. Deviations can be characterized in terms of anomalous Wtb couplings that arise from effective dimension-six operators. A novel analysis technique to set limits on anomalous couplings has been deployed in Ref.~\cite{atlas-anomcoupl}. It utilizes a double differential distribution with respect to two angles that denote the polar~(Fig.~\ref{fig:angles}a) and azimunthal~(Fig.~\ref{fig:angles}b) direction of the lepton in the reconstructed W boson rest frame.
 
 
-\section{Properties}
-
-%
 \begin{figure}[htbp]
 \begin{center}
-\parbox[t]{0.3\textwidth}{\centering\includegraphics[width=0.29\textwidth]{atlas_anomcoupl/theta.pdf}\\(a)}
-\parbox[t]{0.3\textwidth}{\centering\includegraphics[width=0.29\textwidth]{atlas_anomcoupl/phi.pdf}\\(b)}
+\parbox[t]{0.3\textwidth}{\centering\includegraphics[width=0.29\textwidth]{atlas_anomcoupl/phi.pdf}\\(a)}
+\parbox[t]{0.3\textwidth}{\centering\includegraphics[width=0.29\textwidth]{atlas_anomcoupl/theta.pdf}\\(b)}
 \parbox[t]{0.38\textwidth}{\centering\includegraphics[width=0.36\textwidth]{atlas_anomcoupl/limits.pdf}\\(c)}
 \end{center}
-\caption{Limits on anomalous couplings~\cite{atlas-anomcoupl}.}
+\caption{\label{fig:angles}Limits on anomalous couplings~\cite{atlas-anomcoupl}.}
 \end{figure}
+
+An event-based likelihood is constructed for both angles using an analytical folding model that accounts for finite resolution, acceptance and reconstruction efficiencies. Limits on the real and imaginary part of the right-handed tensor anomalous coupling with respect to the left-handed vector-like SM coupling, $g_{R}/V_{L}$, are infered and shown in Fig.~\ref{fig:angles}c. The analysis sets a new limit on the imaginary part of $\mathrm{Im}(g_{R}/V_{L})\in[-0.17,0.23]$ at 95\% CL which was never measured before.
+
+
+
 
 \section{Early cross section measurement at 13~TeV}
 
