@@ -7,13 +7,13 @@
 \ShortTitle{Single top quark production measurements at the LHC: t-channel}
 
 \author{
-    \speaker{Matthias Komm}\\
+    \speaker{Matthias Komm}, on behalf of the ATLAS and CMS collaborations\\
     Universite Catholique de Louvain (UCL) (BE)\\
     E-mail: \email{Matthias.Komm@cern.ch}
 }
 
 \abstract{
-At the LHC, single top quark are predominately produced via the $t$-channel. Measuring the properties of the production process provides a vital probe of the theory of electroweak interactions. This note reviews recent results on cross section measurements and coupling structure studies in pp collisions by the ATLAS and CMS collaborations at center-of-mass energy of 7, 8, and 13~TeV.
+At the LHC, single top quarks are predominately produced via the $t$-channel. Measuring the properties of the production process provides a crucial probe of the theory of electroweak interactions. This paper reviews recent results on cross section measurements and coupling structure studies in pp collisions by the ATLAS and CMS collaborations at center-of-mass energies of 7, 8, and 13~TeV.
 }
 
 \FullConference{
@@ -25,12 +25,12 @@ At the LHC, single top quark are predominately produced via the $t$-channel. Mea
 \begin{document}
 
 \section{Introduction}
-The production and decay of single top quarks via $t$-channel solely involves electroweak interactions at leading order (LO). The high mass of the top quark allows it to decay to on-shell W bosons before hadronization becomes relevant. This allows to measure a variety of standard model (SM) properties such as the CKM matrix element $\mathrm{V_{tb}}$ and the parity-violating V-A coupling structure by studying this process. Furthermore, the top quark may be relevant in beyond-SM theories because it has the highest coupling strength to the Higgs boson and thus contributes to the Higgs self-energy and vacuum stability.
+The production and decay of single top quarks via $t$-channel involves electroweak interactions at leading order (LO). The high mass of the top quark allows it to decay to on-shell W bosons before hadronization becomes relevant. This allows to measure a variety of standard model (SM) properties such as the CKM matrix element $\mathrm{V_{tb}}$ and the parity-violating V-A coupling structure.
 
 In the following, the latest results by the ATLAS and CMS collaborations are reviewed.
 
 \section{Cross section measurements at 8~TeV}
-Precise measurements of the $t$-channel single top quark cross section at 8~TeV have been accomplished at the LHC in pp collisions by the ATLAS and CMS collaborations~\cite{atlas-xsec8,cms-xsec8} utilizing data that corresponds to approximately $20~\mathrm{fb}^{-1}$. For the measurements, events with an isolated muon or electron and two jets are selected where one jet is required to pass the threshold of dedicated b-tagging algorithms. The cross section is measured using a binned maximum-likelihood (ML) fit to a discriminating variable. CMS exploits the pseudo rapidity distribution of the non b-tagged jet that is produced in the forward detector region for single top quark events (Fig.~\ref{fig:fit-xsec-8}a) whereas ATLAS combines multiple observables in one powerful discriminant by training a neutral network (Fig.~\ref{fig:fit-xsec-8}b).
+Precise measurements of the $t$-channel single top quark cross section at 8~TeV have been accomplished at the LHC in pp collisions by the ATLAS and CMS collaborations~\cite{atlas-xsec8,cms-xsec8} utilizing data that corresponds to approximately $20~\mathrm{fb}^{-1}$. For the measurements, events with an isolated muon or electron and two jets are selected where one jet is required to pass the threshold of dedicated b-tagging algorithms. The cross section is measured using a binned maximum-likelihood (ML) fit to a discriminating variable. CMS exploits the pseudorapidity distribution of the non b-tagged jet that is produced in the forward detector region for single top quark events (Fig.~\ref{fig:fit-xsec-8}a) whereas ATLAS combines multiple observables into one powerful discriminant by training a neural network (Fig.~\ref{fig:fit-xsec-8}b).
 
 \begin{figure}[htbp]
 \begin{center}
@@ -38,26 +38,26 @@ Precise measurements of the $t$-channel single top quark cross section at 8~TeV 
 \parbox[t]{0.42\textwidth}{\centering\includegraphics[width=0.37\textwidth]{atlas_xsec8/nnoutput.pdf}\\(b)}
 
 \end{center}
-\caption{\label{fig:fit-xsec-8}Discriminating observables used to measure the single top quark cross section: (a)~pseudo rapidity of the non b-tagged jet used by CMS and (b)~neutral network output used by ATLAS.}
+\caption{\label{fig:fit-xsec-8}Discriminating observables used to measure the single top quark cross section: (a)~pseudorapidity of the non b-tagged jet used by CMS and (b)~neural network discriminant used by ATLAS.}
 
 \end{figure}
 
-The measured inclusive cross section is used to set a limit on the CKM matrix element $|\mathrm{V_{tb}}|\equiv\sqrt{\sigma_\mathrm{obs.}/\sigma_\mathrm{theo.}}$. This procedure makes no assumptions on the number of quark generations or the unitariy of the CKM matrix. The measured cross sections at 8~TeV together with the extracted limits on $\mathrm{|V_{tb}|}$ are 
+The measured inclusive cross section is used to set a limit on the CKM matrix element $|\mathrm{V_{tb}}|\simeq\sqrt{\sigma_\mathrm{obs.}/\sigma_\mathrm{theo.}}$. This procedure makes no assumptions on the number of quark generations or the unitariy of the CKM matrix. The measured cross sections at 8~TeV together with the extracted limits on $\mathrm{|V_{tb}|}$ are 
 \begin{align}
 \sigma_{t\mbox{-}\mathrm{ch.}}^\mathrm{ATLAS}&=82.6\pm1.2\mathrm{(stat)}\pm12.0\mathrm{(syst)}~\mathrm{pb}, &\Rightarrow |\mathrm{V_{tb}}|>0.78~\mathrm{(95\%~CL,~8~TeV)}, \\
 \sigma_{t\mbox{-}\mathrm{ch.}}^\mathrm{CMS}&=83.6\pm2.3\mathrm{(stat)}\pm7.4\mathrm{(syst)}~\mathrm{pb} &\Rightarrow |\mathrm{V_{tb}}|>0.92~\mathrm{(95\%~CL,~7+8~TeV)}
 \end{align}
 
-which are compatible with the expectation of $86.5_{-1.0}^{+2.8}\mathrm{(scale)}_{-2.2}^{+2.0}\mathrm{(PDF)}~\mathrm{pb}$ at next-to-leading order (NLO)~\cite{Kidonakis-8tev}.
+which are compatible with the expectation of $83.9_{-0.2}^{+0.6}\mathrm{(scale)}~\mathrm{pb}$ at next-to-next-to-leading order (NNLO)~\cite{Brucherseifer-xsec8}.
 
-In addition to the inclusive cross section, the fiducial cross section has been measured as well~\cite{CMS-PAS-TOP-15-007,atlas-xsec8}. It provides a deep test of the theory by restricting the measurement only to the detector acceptance. The advantage is that fiducial measurements do not inherit theoretical uncertainties that account for extrapolations into an experimentally unprobed phase space.
+In addition to the inclusive cross section, the fiducial cross section has been measured as well~\cite{atlas-xsec8,CMS-PAS-TOP-15-007}. It provides a deep test of the theory by restricting the measurement only to the detector acceptance. The advantage is that fiducial measurements are not affected by theoretical uncertainties that account for extrapolations into an experimentally unprobed phase space.
 
 
 
 
 
 \section{Charge ratio measurements}
-The cross section charge ratio $\sigma(t)/\sigma(\bar{t})$ has also been measured~\cite{atlas-charge7,cms-xsec8}. It is particular sensitive to the parton distribution functions (PDF). Figure~\ref{fig:charge-ratio} shows measurements by CMS (8~TeV) and ATLAS (7~TeV) compared to different PDF sets. Similar tensions in both measurements for some sets are observed. 
+The cross section ratio $\sigma(t)/\sigma(\bar{t})$ has also been measured~\cite{cms-xsec8,atlas-charge7}. It is particular sensitive to the parton distribution functions (PDF). Figure~\ref{fig:charge-ratio} shows measurements by CMS (8~TeV) and ATLAS (7~TeV) compared to different PDF sets. Similar tensions in both measurements for some sets are observed. 
 
 \begin{figure}[htbp]
 \begin{center}
@@ -69,7 +69,7 @@ The cross section charge ratio $\sigma(t)/\sigma(\bar{t})$ has also been measure
 \end{figure}
 
 \section{Electroweak coupling structure}
-Single top quark events allow to probe the electroweak V-A structure because of the Wtb vertex in production and decay. Deviations can be characterized in terms of anomalous Wtb couplings that arise from effective dimension-six operators. A novel analysis technique to set limits on anomalous couplings has been developed by ATLAS~\cite{atlas-anomcoupl}. It utilizes two differential distribution with respect to the polar~(Fig.~\ref{fig:angles}a) and azimuthal~(Fig.~\ref{fig:angles}b) angles of the lepton in the reconstructed W boson rest frame.
+Single top quark events allow to probe the electroweak V-A structure because of the Wtb vertex in production and decay. Deviations can be characterized in terms of anomalous Wtb couplings that arise from effective dimension-six operators. A novel analysis technique to set limits on anomalous couplings has been developed by ATLAS~\cite{atlas-anomcoupl}. It utilizes a double differential distribution with respect to the polar~(Fig.~\ref{fig:angles}a) and azimuthal~(Fig.~\ref{fig:angles}b) angles of the lepton in the reconstructed W boson rest frame.
 
 \begin{figure}[htbp]
 \begin{center}
@@ -86,23 +86,23 @@ An event-based likelihood is constructed for both angles using an analytical fol
 \section{Early cross section measurement at 13~TeV}
 
 After the long shutdown, the LHC has been restarted at a new center-of-mass energy of 13~TeV. An early single top quark $t$-channel cross section measurement has been performed by CMS~\cite{CMS-PAS-TOP-15-004} with the first recorded data that corresponds to $42~\mathrm{pb}^{-1}$.
-The analysis strategy follows closely the previous measurement at 8~TeV. Events with one isolated muon and two jets are selected where one jet is required to be b-tagged. The QCD multijet background is estimated by modeling its shape from data with inverted muon isolation and fitted to the transverse W boson mass distribution as shown in Fig.~\ref{fig:singletop13}a. The pseudorapidity distribution of the forward, non b-tagged jet in the 2~jet 1~b-tag signal region (Fig.~\ref{fig:singletop13}b) is used to measure the single top quark cross section using a binned ML fit. An additional constraint on the $t\bar{t}$ yield is introduced by fitting the 3~jet 2~b-tags region (Fig.~\ref{fig:singletop13}c) simultaneously.
+The analysis strategy follows closely the previous measurement at 8~TeV. Events with one isolated muon and two jets are selected where one jet is required to be b-tagged. The QCD multijet background is estimated by modeling its shape from data with inverted muon isolation and fitted to the transverse W boson mass distribution as shown in Fig.~\ref{fig:singletop13}a. The pseudorapidity distribution of the forward, non b-tagged jet (Fig.~\ref{fig:singletop13}b) is used to measure the single top quark cross section using a binned ML fit.
 \begin{figure}[htbp]
 \begin{center}
-\parbox[t]{0.32\textwidth}{\centering\includegraphics[width=0.31\textwidth]{cms_xsec13/mtw.pdf}\\(a)}
-\parbox[t]{0.32\textwidth}{\centering\includegraphics[width=0.31\textwidth]{cms_xsec13/mu2j1t.pdf}\\(b)}
-\parbox[t]{0.32\textwidth}{\centering\includegraphics[width=0.31\textwidth]{cms_xsec13/mu3j2t.pdf}\\(c)}
+\parbox[t]{0.29\textwidth}{\centering\includegraphics[width=0.28\textwidth]{cms_xsec13/mtw.pdf}\\(a)}
+\parbox[t]{0.29\textwidth}{\centering\includegraphics[width=0.28\textwidth]{cms_xsec13/mu2j1t.pdf}\\(b)}
+\parbox[t]{0.39\textwidth}{\centering\includegraphics[width=0.35\textwidth]{cms_xsec13/xsec.pdf}\\(c)}
 \end{center}
-\caption{\label{fig:singletop13}The transverse W boson mass in (a)~2~jets 1~b-tag and the pseudo rapidity of the forward, non b-tagged jet in (b)~2~jets 1~b-tag and (c)~3~jets 2~b-tags.}
+\caption{\label{fig:singletop13}The transverse W boson mass~(a), the pseudo rapidity of the forward, non b-tagged jet~(b), and a comparison with theory of the cross section measurements by CMS~(c).}
 \end{figure}
 
 The major sources of uncertainty are the data statistics (36\%), jet energy calibration (17\%) and luminosity (12\%).
-The early single top quark $t$-channel analysis at 13~TeV syields a cross section of
+The early single top quark $t$-channel analysis at 13~TeV yields a cross section of
 \begin{equation}
 \sigma_{t\mbox{-}\mathrm{ch.}}=274~\mathrm{pb}\pm98\mathrm{(stat)}\pm52\mathrm{(syst)}\pm33\mathrm{(lumi)}~\mathrm{pb}.
 \end{equation}
 
-The result agrees within uncertainties to the expectation of $218_{-2}^{+5}\mathrm{(scale)}\pm5\mathrm{(PDF)}~\mathrm{pb}$ at NLO~\cite{Kidonakis-8tev}.
+The result agrees within uncertainties with the expectation of $218_{-2}^{+5}\mathrm{(scale)}\pm5\mathrm{(PDF)}~\mathrm{pb}$ at approximate NNLO~\cite{Kidonakis-8tev}. A comparison with theory is shown in Fig.~\ref{fig:singletop13}c together with measurements at 7~and 8~TeV by CMS.
 
 \section{Conclusion}
 The latest results on $t$-channel single top quark production in pp collisions at the LHC have been reviewed.
@@ -111,23 +111,26 @@ Inclusive and fiducial measurements of the cross section have been established b
 
 Finally, an early cross section measurement has been accomplished by CMS that uses the first data at 13~TeV after the LHC restart.
 
+
 \begin{thebibliography}{99}
 
 
-\bibitem{atlas-xsec8}{ATLAS Collaboration, \emph{Measurement of the Inclusive and Fiducial Cross-Section of Single Top-Quark $t$-Channel Events in $pp$ Collisions at $\sqrt{s}$ = 8 TeV}, Tech. Rep. ATLAS-CONF-2014-007, 2014}
+\bibitem{atlas-xsec8}{ATLAS Collaboration, \emph{Measurement of the Inclusive and Fiducial Cross-Section of Single Top-Quark $t$-Channel Events in $pp$ Collisions at $\sqrt{s}$ = 8 TeV}, Tech. Rep. ATLAS-CONF-2014-007, 2014.}
 
-\bibitem{cms-xsec8}{V. Khachatryan, et. al., \emph{Measurement of the t-channel single-top-quark production cross section and of the |Vtb| CKM matrix element in pp collisions at $\sqrt{s}$ = 8~TeV}, JHEP06 090, 2014}
+\bibitem{cms-xsec8}{V. Khachatryan, et. al., \emph{Measurement of the t-channel single-top-quark production cross section and of the |Vtb| CKM matrix element in pp collisions at $\sqrt{s}$ = 8~TeV}, JHEP06 090, 2014.}
 
-\bibitem{Kidonakis-8tev}{N. Kidonakis, \emph{Theoretical results for electroweak-boson and single-top production}, Proceedings DIS 2015, Dallas, Texas, US, \texttt{arXiv:1506.04072[hep-ex]}, 2015}
+\bibitem{Brucherseifer-xsec8}{M. Brucherseifer et. al., \emph{On the NNLO QCD corrections to single-top production at the LHC}, Phys. Lett. B736 58-63, 2014.}
 
 \bibitem{CMS-PAS-TOP-15-007}{CMS Collaboration, \emph{Fiducial t-channel single top-quark cross section at 8 TeV}, Tech. Rep. CMS-PAS-TOP-15-007, 2015.}
 
 \bibitem{atlas-charge7}{G. Aad et. al., \emph{Comprehensive measurements of $t$-channel single top-quark production cross sections at $\sqrt{s} = 7$ TeV with the ATLAS detector}, Phys. Rev. D90 112006, 2014.}
 
-\bibitem{atlas-anomcoupl}{G. Aad et. al., \emph{Search for anomalous couplings in the $Wtb$ vertex from the measurement of double differential angular decay rates of single top quarks produced in the $t$-channel with the ATLAS detector}, 
+\bibitem{atlas-anomcoupl}{G. Aad et. al., \emph{Search for anomalous couplings in the $Wtb$ vertex from the measurement of double differential angular decay rates of single top quarks produced in the $t$-channel with the ATLAS detector}, submitted to JHEP,
 \texttt{arXiv:1510.03764[hep-ex]}, 2015.}
 
 \bibitem{CMS-PAS-TOP-15-004}{CMS Collaboration, \emph{Measurement of the t-channel single top-quark cross section at 13 TeV}, Tech. Rep. CMS-PAS-TOP-15-004, 2015.}
+
+\bibitem{Kidonakis-8tev}{N. Kidonakis, \emph{Theoretical results for electroweak-boson and single-top production}, Proceedings DIS 2015, Dallas, Texas, US, \texttt{arXiv:1506.04072[hep-ex]}, 2015.}
 
 \end{thebibliography}
 
